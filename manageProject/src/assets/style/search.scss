@@ -1,0 +1,22 @@
+@import './mixin.scss';
+.el-button--primary{
+    @include wh(120px,40px);
+}
+.userSearch .el-input{
+    width: 240px;
+}
+.input-group  .el-form-item__label{
+    color:#333;
+    @include padding(0,14px,0,0);
+}
+.el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 160px;
+}
+.userSearch{
+    position: relative;
+}
+.btn-search{
+    position: absolute;
+    top:0;
+    left: 680px;
+}

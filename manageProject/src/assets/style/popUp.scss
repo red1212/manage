@@ -1,0 +1,48 @@
+@import './mixin.scss';
+.title{
+    @include sc(16px,$color_7D8EDA);
+    margin-bottom: 20px;
+}
+.popUp{
+    @include allcover(absolute,0);
+    left: 0px;
+    top:184px;
+    width: 400px;
+    z-index: 1000;
+    background: $write;
+    @include rounded(6px);
+    overflow: hidden;
+    @include shadow(0,0,10px,0,$color_shadow);      
+    .userDetail{
+        @include padding(20px,20px,20px,20px);
+    }
+ }
+ .popUp /deep/ .el-input__inner{
+    @include border(1px, solid, transparent);
+    @include he(20px,20px);
+ }
+ .popUp /deep/ .el-input__inner:focus{
+     background-color:$color_inputFocus;
+ }
+ .popUp /deep/ .el-form-item__label{
+    line-height: 20px;
+ }
+ .popUp {
+     .el-form-item {
+         margin-bottom: 14px;
+      } 
+      p{margin-bottom: 14px;line-height: 20px;}
+ }
+ .popUp /deep/  .el-form-item__content{
+    line-height: 20px;
+ }
+ 
+ .popUp /deep/ .el-input{
+     @include wh(170px,20px);
+ }
+ .line{
+     @include border(1px, solid, #ccc);
+     width: 100%;
+     display: inline-block;
+     margin-bottom: 20px;
+ }

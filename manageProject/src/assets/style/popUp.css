@@ -1,0 +1,91 @@
+.fix {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ctt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  font-size: 16px;
+  color: #7D8EDA;
+  margin-bottom: 20px;
+}
+
+.popUp {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  top: 184px;
+  width: 400px;
+  z-index: 1000;
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.2);
+  -moz-box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.2);
+  box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.2);
+}
+
+.popUp .userDetail {
+  padding: 20px 20px 20px 20px;
+}
+
+.popUp /deep/ .el-input__inner {
+  border: 1px solid transparent;
+  height: 20px;
+  line-height: 20px;
+}
+
+.popUp /deep/ .el-input__inner:focus {
+  background-color: #EAEEFF;
+}
+
+.popUp /deep/ .el-form-item__label {
+  line-height: 20px;
+}
+
+.popUp .el-form-item {
+  margin-bottom: 14px;
+}
+
+.popUp p {
+  margin-bottom: 14px;
+  line-height: 20px;
+}
+
+.popUp /deep/ .el-form-item__content {
+  line-height: 20px;
+}
+
+.popUp /deep/ .el-input {
+  width: 170px;
+  height: 20px;
+}
+
+.line {
+  border: 1px solid #ccc;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+}

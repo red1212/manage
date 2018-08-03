@@ -1,0 +1,57 @@
+.fix {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ctt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.el-button--primary {
+  width: 120px;
+  height: 40px;
+}
+
+.userSearch .el-input {
+  width: 240px;
+}
+
+.input-group /deep/ .el-input__inner {
+  border: 1px solid transparent;
+}
+
+.input-group .el-form-item__label {
+  color: #333;
+  padding: 0 14px 0 0;
+}
+
+.el-date-editor.el-input, .el-date-editor.el-input__inner {
+  width: 160px;
+}
+
+.userSearch {
+  position: relative;
+}
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  left: 680px;
+}

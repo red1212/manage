@@ -1,0 +1,54 @@
+@import './mixin.scss';
+.btngroup {
+    text-align:center;display: flex;
+    .el-button--primary-OK{
+       flex: 1;
+       padding: 13px 20px;
+       color: #fff;
+       background-color: $color_7D8EDA;
+       border:1px solid $color_7D8EDA;
+   }
+   .el-button--primary-NO{
+       flex: 1;
+       padding: 13px 20px;
+       color: #fff;
+       background-color: $color_F29A1A;
+       border:1px solid $color_F29A1A;
+   }
+   .el-button + .el-button {
+       margin-left: 0px;
+   }
+   .el-button{
+       border-radius: 0px;
+   }
+}
+
+//第一个弹窗按钮
+.btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 2000;
+}
+.btnConten{
+    position: relative;
+    background: $write;
+    text-align: center;
+    width: 240px;
+    @include shadow(0,0,10px,0,rgba(0,0,0,.3));
+    @include rounded(6px);
+}
+
+ .el-dialog__body {
+    color: $color_333;
+    text-align: center;
+     padding:10px 20px 30px 20px;
+}
+.el-dialog__foote{
+    padding:0;
+}

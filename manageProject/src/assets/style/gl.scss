@@ -1,0 +1,29 @@
+@import './mixin.scss';
+
+//按钮
+.el-button--primary{
+    @include active($write,$color_7D8EDA);
+    @include border(1px, solid, $color_7D8EDA);
+}
+
+ //单选
+.el-radio__inner{
+    background-color:#ddd;
+}
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: $color_7D8EDA;
+    background: $color_7D8EDA;
+}
+.el-radio__input.is-checked + .el-radio__label {
+    color: $color_7D8EDA;
+}
+
+//下拉按钮
+.el-select .el-input .el-select__caret{
+     color: $color_7D8EDA;
+}
+
+//提示弹窗
+.el-dialog{
+     width:240px;
+ }

@@ -1,0 +1,57 @@
+@import './mixin.scss';
+.strategy-dl{
+    i{color: #AAAAAA;}
+}
+.my-tabs { 
+    @include sc(14px,$color_333);
+   display: flex;
+   .iconColor{
+     color:#7C8DD8;
+   }
+   .arrow{
+    float:right;
+    font-size:9px;
+  }
+ } 
+ .tabs-bar {
+    flex: 0 0 160px;
+ } 
+ .tabs-bar-nav { 
+     background: #fff;
+     @include rounded(6px);
+     overflow: hidden;
+     @include shadow(0,0,10px,0,$color_shadow);    
+ } 
+ .tabs-tab {
+   padding:0px 20px; 
+    width: 160px; 
+    position: relative;
+     text-align: center; 
+     cursor: pointer; 
+     @include he(50px,50px)
+ } 
+ .tabs-active { 
+   @include active($write,$color_7D8EDA);
+   .iconColor{
+     color:#fff;
+   }
+ }
+  .tabs-content { 
+    @include padding(0px,0px,40px,30px);
+ }
+.my-tabs .el-menu-item.is-active {
+    background: #7D8EDA;
+    color: #fff;
+}
+.my-tabs .el-menu-item{
+    width: 160px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+}
+.my-tabs .el-menu-item i {
+    float:left;
+    margin-top:17px;
+}

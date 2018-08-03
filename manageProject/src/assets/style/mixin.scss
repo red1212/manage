@@ -1,0 +1,117 @@
+$bg: #323856;  
+$color_7D8EDA : #7D8EDA;  //按钮的背景以及边框
+$write: #fff;
+$color_333: #333; //字体颜色
+$color_shadow: rgba(153,153,153,0.20); //boxshadow
+$color_inputFocus: #EAEEFF; //input的focus
+$color_ccc: #ccc;
+$color_F29A1A: #F29A1A;
+$color_9bff45: #9bff45;
+$color_F5A623: #F5A623;
+// 背景图片地址和大小
+@mixin bis($url) { 
+	background-image: url($url);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+//定位全屏
+@mixin allcover($absolute,$top){
+	position:absolute;
+	top:0;
+}
+
+//transform上下左右居中
+.fix{
+	position: fixed;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ctt {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+//定位上下左右居中
+@mixin ctp($width, $height) {  
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-top: -$height/2;
+    margin-left: -$width/2;
+}
+
+//定位上下居中
+.tb {  
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+//定位左右居中
+.lr {  
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+}
+//border边框
+@mixin bordered($color, $width: 4px) {
+	color: $write;
+	border-bottom: $width solid $color;
+}
+//border边框
+@mixin border($width,$solid,$color){
+	border:$width $solid $color;
+}
+// border-ridius
+@mixin rounded($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+//box-shadow
+@mixin shadow($x, $y,$x1, $y1, $color){
+	-webkit-box-shadow: $x $y $x1 $y1 $color;
+	-moz-box-shadow: $x $y $x1 $y1 $color;
+	box-shadow: $x $y $x1 $y1 $color;
+}
+
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+	height: $height;
+}
+@mixin he($height, $line-height){
+	height: $height;
+	line-height: $line-height;
+}
+//字体大小、行高、字体
+@mixin ft($size, $line-height) {  
+	font-size: $size;
+	line-height:$line-height;
+}
+
+//字体大小，颜色
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+
+//flex 布局和 子元素 对其方式
+@mixin fj($type: space-between){
+	display: flex;
+	justify-content: $type;
+}
+
+//字体颜色和背景色
+@mixin active($color,$background){
+	background:$background;
+	color: $color;
+}
+
+//padding
+@mixin padding($top, $right, $bottom, $left){
+	padding: $top $right $bottom $left;
+}

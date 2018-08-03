@@ -1,0 +1,38 @@
+/* input设置边框开始 */
+.el-input__inner {
+    border:1px solid #fff
+}
+.el-input__inner:hover {
+    border-color: #fff;
+}
+/* 部分的搜索列表 */
+.el-input__inner:focus{
+    border-color:#fff;
+}
+
+/* input设置边框结束 */
+
+/* 添加公司搜索按钮的边框 */
+.el-input-group__append{
+    border:none;
+}
+/* select下拉箭头 */
+.popUp .el-input__icon{
+    line-height: 100%;
+}
+
+/* 复选框 */
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #7D8EDA;
+    border-color: #7D8EDA;
+}
+.el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #7D8EDA;
+}
+/* 开关按钮 */
+/* .el-switch__core::after{
+    background: #7D8EDA
+} */
+.el-switch__label.is-active {
+    color: #7D8EDA;
+}
